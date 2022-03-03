@@ -13,3 +13,6 @@
 | 1    | Jaswant Chaudhary  |
 | 2    | Satya Praksh Mall  |
 | 3    | Paarug Sethi       |
+
+### Project Duration 
+- March 1, 2022 to March 12, 2022
