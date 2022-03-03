@@ -16,3 +16,6 @@
 
 ### Project Duration 
 - March 1, 2022 to March 12, 2022
+
+### Software Developemnt Methodlogy used to develop this project 
+- Agile 
