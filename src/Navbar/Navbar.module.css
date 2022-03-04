@@ -1,0 +1,111 @@
+
+.navbar{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-left: 5%;
+}
+
+.logo{
+   margin-top: 20px;
+}
+
+.navtext{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.navtext > div{
+    margin-left: 4%;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdowntext{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.login{
+    padding-left: 10%;
+}
+
+.getstarted{
+    border-left: 1px solid black;
+    padding: 20px;
+}
+
+.menuicon{
+    display: none;
+}
+
+.drawer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawerbottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.drawerlink{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 36px;
+    color: rgb(34, 34, 34);
+}
+
+.drawercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: 30px;
+}
+
+.drawerlogin{
+    width: 50%;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}
+
+.drawergetstarted{
+    width: 50%;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+    background: rgb(33,205,156);
+}
+
+@media screen and (max-width: 1022px) {
+    .navbar{
+        width: 100%;
+        align-items: center;
+    }
+    .navtext{
+        display: none;
+    }
+    .getstarted{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+        margin-left: 65%;
+    }
+    .drawer{
+        width: 100%;
+        height: 100vh;
+        background: rgb(255,255,255);
+    }
+}
