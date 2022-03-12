@@ -8,10 +8,10 @@ import useStyles from './styles';
 import Skeleton from '@mui/material/Skeleton';
 
 const Courses = ({ setCurrentId }) => {
-  const { posts, isLoading } = useSelector((state) => state.posts);
+  const { courses, isLoading } = useSelector((state) => state.courses);
   const classes = useStyles();
 
-  if (!posts.length && !isLoading) return 'No posts';
+  if (!courses.length && !isLoading) return 'No courses';
 
   return (
     isLoading ?  (
@@ -27,13 +27,13 @@ const Courses = ({ setCurrentId }) => {
           <br/>
           </Grid>
     ))}</Grid>) : (
-      <Grid className={classes.container} container alignItems="stretch" spacing={6}>
-        {posts?.map((post) => (
-          <Grid key={post._id} item xs={12} sm={12} md={6} lg={6} >
-            <Course post={post} setCurrentId={setCurrentId} />
-          </Grid>
+      <div style={{display: 'flex', flexWrap:"wrap", width: '100%', gap:"1rem", justifyContent: 'center'}}>
+        {courses?.map((course) => (
+          <div>
+            <Course course={course} setCurrentId={setCurrentId} />
+          </div>
         ))}
-      </Grid>
+      </div>
     )
   );
 };

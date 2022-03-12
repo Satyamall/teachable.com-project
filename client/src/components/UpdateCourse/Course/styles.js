@@ -20,6 +20,7 @@ export default makeStyles({
     borderRadius: '15px',
     height: '100%',
     position: 'relative',
+    width: '310px'
   },
   overlay: {
     position: 'absolute',
@@ -51,7 +52,7 @@ export default makeStyles({
   },
   cardAction: {
     display: 'block',
-    textAlign: 'initial',
+    textAlign: 'initial'
   },
   editButton : {
     fontSize: '20px',
